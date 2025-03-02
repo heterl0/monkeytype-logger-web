@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://monkeytype-analysis.heterl0.live/sitemap.xml
+

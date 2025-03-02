@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "MonkeyType Analysis",
     description:
       "Analyze your MonkeyType typing data with detailed metrics and visualizations.",
-    images: ["https://monkeytype-analysis.heterl0.live/og-image.jpg"],
+    images: ["https://monkeytype-analysis.heterl0.live/og-image.png"],
   },
   icons: [
     { rel: "icon", url: "https://monkeytype-analysis.heterl0.live/icon.png" },

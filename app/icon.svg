@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="64" height="64"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_18_4)">
+<path d="M0 16C0 5.33333 5.33333 0 16 0H48C58.6667 0 64 5.33333 64 16V48C64 58.6667 58.6667 64 48 64H16C5.33333 64 0 58.6667 0 48" fill="#0B0E13"></path>
+<path d="M8 29.8138V44.1129H11.4114V35.8842C11.5251 33.8112 12.5201 32.7748 14.3964 32.7748C15.9333 32.9475 16.7017 33.8108 16.7017 35.3648V44.0657H20.1131V36.3091C20.0562 33.9484 21.0512 32.768 23.0981 32.768C24.635 32.9407 25.4034 33.8041 25.4034 35.3581V44.0589H28.8148V35.8302C28.8148 31.5719 27.2513 29.4428 24.1242 29.4428C22.2497 29.4428 20.6861 30.2207 19.4335 31.7765C18.4652 30.2207 17.1281 29.4428 15.4224 29.4428C13.8855 29.4428 12.5485 29.9892 11.4114 31.0818V29.6991M33.259 26.3065V29.7598H30.1874V33.2132H33.259V44.0724H36.6703V33.2132H39.7419V29.7598H36.6703V26.3065" fill="#60759F"></path>
+<path d="M43.6129 20.8871V44.0589H56V40.2419H47.871V20.8871H43.6129Z" fill="#60759F"></path>
+</g>
+<defs>
+<clipPath id="SvgjsClipPath1008">
+<rect width="64" height="64" fill="white"></rect>
+</clipPath>
+</defs>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
