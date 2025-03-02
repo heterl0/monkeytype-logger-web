@@ -1,6 +1,52 @@
 import { UploadForm } from "@/components/upload-form";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Keyboard } from "lucide-react";
+import { Metadata } from "next";
+import Script from "next/script";
+import Link from "next/link";
+import Image from "next/image";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://monkeytype-analysis.heterl0.live/"),
+  title: "MonkeyType Analysis",
+  description:
+    "Analyze your MonkeyType typing data with detailed metrics and visualizations.",
+  keywords: "MonkeyType, Typing Analysis, Typing Metrics",
+  robots: "follow, index",
+  openGraph: {
+    title: "MonkeyType Analysis",
+    description:
+      "Analyze your MonkeyType typing data with detailed metrics and visualizations.",
+    url: "https://monkeytype-analysis.heterl0.live/",
+    siteName: "MonkeyType Analysis",
+    type: "website",
+    images: [
+      {
+        url: "https://monkeytype-analysis.heterl0.live/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "MonkeyType Analysis",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MonkeyType Analysis",
+    description:
+      "Analyze your MonkeyType typing data with detailed metrics and visualizations.",
+    images: ["https://monkeytype-analysis.heterl0.live/og-image.jpg"],
+  },
+  icons: [
+    { rel: "icon", url: "https://monkeytype-analysis.heterl0.live/icon.png" },
+    {
+      rel: "apple-touch-icon",
+      url: "https://monkeytype-analysis.heterl0.live/apple-icon.png",
+    },
+  ],
+  alternates: {
+    canonical: "https://monkeytype-analysis.heterl0.live/",
+  },
+};
 
 export default function Home() {
   return (
@@ -38,6 +84,18 @@ export default function Home() {
             &copy; {new Date().getFullYear()} MonkeyType Analysis. All rights
             reserved.
           </p>
+          <span className="text-muted-foreground flex items-end gap-4">
+            <span className="text-sm">See this helpful! </span>
+            <Link href="https://www.buymeacoffee.com/heterl0" target="_blank">
+              <Image
+                src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+                alt="Buy Me A Coffee"
+                width={217}
+                height={60}
+                className="bg-cover h-10 w-auto"
+              />
+            </Link>
+          </span>
         </div>
       </footer>
     </div>

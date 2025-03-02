@@ -20,6 +20,8 @@ import { Recommendations } from "@/components/dashboard/recommendations";
 import { ModeToggle } from "@/components/mode-toggle";
 import { useToast } from "@/hooks/use-toast";
 import { MonkeyTypeData, processMonkeyTypeData } from "@/lib/data-processing";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Dashboard() {
   const [data, setData] = useState<MonkeyTypeData | null>(null);
@@ -172,6 +174,18 @@ export default function Dashboard() {
             &copy; {new Date().getFullYear()} MonkeyType Analysis. All rights
             reserved.
           </p>
+          <span className="text-muted-foreground flex items-end gap-4">
+            <span className="text-sm">See this helpful! </span>
+            <Link href="https://www.buymeacoffee.com/heterl0" target="_blank">
+              <Image
+                src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+                alt="Buy Me A Coffee"
+                width={217}
+                height={60}
+                className="bg-cover h-10 w-auto"
+              />
+            </Link>
+          </span>
         </div>
       </footer>
     </div>

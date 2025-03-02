@@ -1,14 +1,15 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
-import { Toaster } from '@/components/ui/toaster';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "@/components/ui/toaster";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'MonkeyType Analysis',
-  description: 'Analyze your MonkeyType typing data with detailed metrics and visualizations',
+  title: "MonkeyType Analysis",
+  description:
+    "Analyze your MonkeyType typing data with detailed metrics and visualizations",
 };
 
 export default function RootLayout({
