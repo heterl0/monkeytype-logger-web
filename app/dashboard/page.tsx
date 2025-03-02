@@ -171,8 +171,8 @@ export default function Dashboard() {
       <footer className="border-t  py-6 mt-10">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} MonkeyType Analysis. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} MonkeyType Analysis. Released
+            under the MIT License.
           </p>
           <span className="text-muted-foreground flex items-end gap-4">
             <span className="text-sm">See this helpful! </span>

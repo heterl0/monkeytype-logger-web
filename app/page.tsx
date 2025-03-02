@@ -2,7 +2,6 @@ import { UploadForm } from "@/components/upload-form";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Keyboard } from "lucide-react";
 import { Metadata } from "next";
-import Script from "next/script";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -81,8 +80,8 @@ export default function Home() {
       <footer className="border-t py-6">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} MonkeyType Analysis. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} MonkeyType Analysis. Released
+            under the MIT License.
           </p>
           <span className="text-muted-foreground flex items-end gap-4">
             <span className="text-sm">See this helpful! </span>
