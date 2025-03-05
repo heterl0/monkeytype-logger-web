@@ -58,7 +58,8 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-4">
             <Link
-              href="https://chrome.google.com/webstore/detail/your-extension-id"
+              href="https://microsoftedge.microsoft.com/addons/detail/monkeytype-history-logger/ophgnpohledibffckhpabdcciniinnjo"
+              target="_blank"
               className="flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90"
             >
               <Puzzle className="h-4 w-4" />
