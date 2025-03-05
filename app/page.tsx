@@ -1,6 +1,6 @@
 import { UploadForm } from "@/components/upload-form";
 import { ModeToggle } from "@/components/mode-toggle";
-import { Keyboard } from "lucide-react";
+import { Keyboard, Puzzle } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -56,11 +56,20 @@ export default function Home() {
             <Keyboard className="h-6 w-6" />
             <h1 className="text-xl font-bold">MonkeyType Analysis</h1>
           </div>
-          <ModeToggle />
+          <div className="flex items-center gap-4">
+            <Link
+              href="https://chrome.google.com/webstore/detail/your-extension-id"
+              className="flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90"
+            >
+              <Puzzle className="h-4 w-4" />
+              <span className="hidden md:block">Get Extension</span>
+            </Link>
+            <ModeToggle />
+          </div>
         </div>
       </header>
 
-      <main className="container mx-auto py-10 flex-1">
+      <main className="container mx-auto py-10 px-5 flex-1 flex flex-col justify-center">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight">
             Analyze Your Typing Data

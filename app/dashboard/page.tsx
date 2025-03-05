@@ -128,7 +128,7 @@ export default function Dashboard() {
         </div>
       </header>
 
-      <main className="container mx-auto py-6">
+      <main className="container mx-auto py-6 px-5">
         <Card className="mb-6">
           <CardHeader>
             <CardTitle>Typing Performance Dashboard</CardTitle>
