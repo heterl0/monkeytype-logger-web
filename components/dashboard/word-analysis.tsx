@@ -1,8 +1,22 @@
 "use client";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { MonkeyTypeData } from "@/lib/data-processing";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
 interface WordAnalysisProps {
   data: MonkeyTypeData;
@@ -10,24 +24,26 @@ interface WordAnalysisProps {
 
 export function WordAnalysis({ data }: WordAnalysisProps) {
   const { errorLetterFrequency, correctedLetterFrequency, summary } = data;
-  
+
   // Prepare letter frequency data
-  const topErrorLetters = errorLetterFrequency.slice(0, 10).map(item => ({
+  const topErrorLetters = errorLetterFrequency.slice(0, 10).map((item) => ({
     name: item.letter,
     value: item.count,
   }));
-  
-  const topCorrectedLetters = correctedLetterFrequency.slice(0, 10).map(item => ({
-    name: item.letter,
-    value: item.count,
-  }));
-  
+
+  const topCorrectedLetters = correctedLetterFrequency
+    .slice(0, 10)
+    .map((item) => ({
+      name: item.letter,
+      value: item.count,
+    }));
+
   // Prepare word length comparison data
   const wordLengthData = [
-    { name: 'Error Words', value: summary.avgErrorWordLength },
-    { name: 'Corrected Words', value: summary.avgCorrectedWordLength },
+    { name: "Error Words", value: summary.avgErrorWordLength },
+    { name: "Corrected Words", value: summary.avgCorrectedWordLength },
   ];
-  
+
   return (
     <div className="grid gap-4 md:grid-cols-2">
       <Card>
@@ -47,14 +63,17 @@ export function WordAnalysis({ data }: WordAnalysisProps) {
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
                 <YAxis />
-                <Tooltip formatter={(value) => [value, 'Frequency']} />
+                <Tooltip
+                  formatter={(value) => [value, "Frequency"]}
+                  labelClassName="dark:text-black"
+                />
                 <Bar dataKey="value" fill="hsl(var(--chart-1))" />
               </BarChart>
             </ResponsiveContainer>
           </div>
         </CardContent>
       </Card>
-      
+
       <Card>
         <CardHeader>
           <CardTitle>Top Letters in Corrected Words</CardTitle>
@@ -72,14 +91,17 @@ export function WordAnalysis({ data }: WordAnalysisProps) {
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
                 <YAxis />
-                <Tooltip formatter={(value) => [value, 'Frequency']} />
+                <Tooltip
+                  formatter={(value) => [value, "Frequency"]}
+                  labelClassName="dark:text-black"
+                />
                 <Bar dataKey="value" fill="hsl(var(--chart-2))" />
               </BarChart>
             </ResponsiveContainer>
           </div>
         </CardContent>
       </Card>
-      
+
       <Card className="col-span-2">
         <CardHeader>
           <CardTitle>Average Word Length Comparison</CardTitle>
@@ -96,8 +118,20 @@ export function WordAnalysis({ data }: WordAnalysisProps) {
               >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
-                <YAxis label={{ value: 'Average Length (characters)', angle: -90, position: 'insideLeft' }} />
-                <Tooltip formatter={(value) => [`${Number(value).toFixed(1)} characters`, 'Average Length']} />
+                <YAxis
+                  label={{
+                    value: "Average Length (characters)",
+                    angle: -90,
+                    position: "insideLeft",
+                  }}
+                />
+                <Tooltip
+                  formatter={(value) => [
+                    `${Number(value).toFixed(1)} characters`,
+                    "Average Length",
+                  ]}
+                  labelClassName="dark:text-black"
+                />
                 <Bar dataKey="value" fill="hsl(var(--chart-3))" />
               </BarChart>
             </ResponsiveContainer>
