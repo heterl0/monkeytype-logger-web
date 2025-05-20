@@ -4,6 +4,7 @@ import { Keyboard, Puzzle } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import AdBanner from "@/components/ad-banner/ad-banner";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://monkeytype-analysis.heterl0.live/"),
@@ -69,6 +70,14 @@ export default function Home() {
           </div>
         </div>
       </header>
+
+      <div className="w-full flex justify-center py-4">
+        <AdBanner
+          data-ad-slot="1234567890"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
+      </div>
 
       <main className="container mx-auto py-10 px-5 flex-1 flex flex-col justify-center">
         <div className="mx-auto max-w-3xl text-center">

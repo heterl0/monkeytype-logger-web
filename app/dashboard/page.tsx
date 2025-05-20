@@ -22,6 +22,7 @@ import { useToast } from "@/hooks/use-toast";
 import { MonkeyTypeData, processMonkeyTypeData } from "@/lib/data-processing";
 import Link from "next/link";
 import Image from "next/image";
+import AdBanner from "@/components/ad-banner/ad-banner";
 
 export default function Dashboard() {
   const [data, setData] = useState<MonkeyTypeData | null>(null);
@@ -127,6 +128,14 @@ export default function Dashboard() {
           </div>
         </div>
       </header>
+
+      <div className="w-full flex justify-center py-4">
+        <AdBanner
+          data-ad-slot="1234567890"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
+      </div>
 
       <main className="container mx-auto py-6 px-5">
         <Card className="mb-6">
